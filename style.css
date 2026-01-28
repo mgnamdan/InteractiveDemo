@@ -1,0 +1,99 @@
+/* Base and layout */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(120deg, #ffecb3, #ffe0b2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings and question */
+h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+}
+.question {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.option {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.option:hover {
+    transform: scale(1.05);
+    background-color: #ff1493;
+}
+.option.selected {
+  outline: 3px dashed #ffd700;
+}
+.option.submitted {
+  background-color: #8b0000;
+  filter: brightness(70%);
+}
+
+/* Hidden input offscreen */
+#realAnswer {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Visible button row */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+#submitAnswer, #clearAnswer {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #90ee90;
+    transition: background-color 0.2s;
+}
+#submitAnswer:hover, #clearAnswer:hover {
+    background-color: #32cd32;
+}
+
+/* Feedback after correct answer */
+#feedback {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #ff4500;
+}
+.correct-page {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

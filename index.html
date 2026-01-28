@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Impossible-ish Quiz Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>The Impossible-ish Quiz!</h1>
+            <p class="question">Which one of these is the correct color of the sky?</p>
+
+            <div class="options">
+            <button class="option">Green</button>
+            <button class="option">Purple</button>
+            <button class="option">Orange</button>
+            <button class="option">Pink</button>
+            </div>
+
+            <!-- Hidden input only -->
+            <input type="text" id="realAnswer" placeholder="Type your answer" />
+
+            <!-- Visible buttons -->
+            <div class="button-row">
+            <button type="button" id="submitAnswer">Submit</button>
+            <button type="button" id="clearAnswer">Clear Answer</button>
+            </div>
+
+            <div id="feedback" hidden></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
