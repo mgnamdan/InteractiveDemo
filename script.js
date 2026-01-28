@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const correctAnswer = "blue";
 
     // --- Focus hidden input on page load ---
-    window.addEventListener("DOMContentLoaded", () => {
-        hiddenInput.focus();
-    });
+    hiddenInput.focus();
 
     // Track wrong guesses and which options were tried
     let selectedOption = null;
